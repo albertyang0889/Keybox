@@ -1,0 +1,13 @@
+// 开盒页:只发静态文件的 Worker(没有 Worker 脚本),从这个仓的 main 发到 familykeybox.com。
+{
+  // 要跟 Cloudflare 后台那个 Worker 的名字一样
+  "name": "keybox",
+  "compatibility_date": "2026-11-24",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "none"
+  },
+  // 只留 familykeybox.com 一个地址:关掉 workers.dev 地址和版本预览地址
+  "workers_dev": false,
+  "preview_urls": false
+}
